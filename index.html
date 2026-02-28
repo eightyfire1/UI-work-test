@@ -24,13 +24,18 @@ ol li::marker, ul li::before {
 html {
   width: 100%;
   height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body { 
   width: 100%;
   height: 100%;
   margin: 0;
-  background-color: white;
+  padding: 0;
+  background: linear-gradient(180.00deg, rgba(0, 39, 80, 1) 0%, rgba(0, 72, 148, 1) 100%);
+  min-height: 100vh;
+  overflow: hidden;
 }
     
 span {
@@ -38,19 +43,19 @@ span {
 }
 
 .frame-2_1 {
-  width: 1920px;
-  height: 1080px;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
   position: relative;
   flex-shrink: 0;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
   background-position: center;
   background-image: url("http://localhost:3667/assets/75940ee6d388817badcecbe66cc6775d.png");
 }
 
 .rectangle-2_2 {
-  width: 1920px;
+  width: 100%;
   height: 59px;
   position: absolute;
   left: 0px;
@@ -63,7 +68,7 @@ span {
   width: 169px;
   height: 40px;
   position: absolute;
-  left: 1736px;
+  right: 20px;
   bottom: 9px;
   border-radius: 20px 20px 20px 20px;
   background-color: rgba(255, 103, 0, 1);
@@ -73,7 +78,7 @@ span {
   width: 169px;
   height: 40px;
   position: absolute;
-  left: 1522px;
+  right: 200px;
   bottom: 9px;
   border-radius: 20px 20px 20px 20px;
   background-color: rgba(255, 255, 255, 1);
@@ -83,7 +88,7 @@ span {
   width: 169px;
   height: 40px;
   position: absolute;
-  left: 1308px;
+  right: 380px;
   bottom: 9px;
   border-radius: 20px 20px 20px 20px;
   background-color: rgba(233, 233, 233, 1);
@@ -92,6 +97,9 @@ span {
 .container {
   width: 100%;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
   </style>
